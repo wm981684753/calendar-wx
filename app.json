@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/cal/index",
+    "pages/add/index",
     "pages/index/index",
     "pages/canvas2d/index",
     "pages/canvas2d/detail",
@@ -40,7 +41,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/add/index",
         "iconPath": "/img/mld-s.png",
         "selectedIconPath": "/img/mld.png",
         "text": "添加"

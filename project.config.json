@@ -40,11 +40,12 @@
     "showES6CompileOption": false,
     "useStaticServer": true,
     "disableUseStrict": false,
-    "useCompilerPlugins": false
+    "useCompilerPlugins": false,
+    "condition": false
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.2",
-  "appid": "wx6bbc79b3530ad294",
+  "appid": "wx2edd3050e5587cd6",
   "projectname": "susu_ts",
   "condition": {
     "search": {

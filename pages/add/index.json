@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "date":"/components/date/index",
+    "tabBar":"/components/customTb"
+  },
+  "navigationBarTitleText": "新增日程"
+}

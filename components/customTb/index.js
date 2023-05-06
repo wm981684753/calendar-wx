@@ -14,7 +14,7 @@ Component({
    */
   data: {
     tabBar: [{
-      "pagePath": "/pages/index/index",
+      "pagePath": "/pages/add/index",
       "text": "添加",
       "switchQr": false,
       "iconPath": "../../img/mld-s.png",

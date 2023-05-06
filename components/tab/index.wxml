@@ -1,0 +1,10 @@
+<!--components/tab/index.wxml-->
+<view class="hd_tab">
+  <scroll-view scroll-x class="hd_tb_scroll">
+    <block wx:for="{{navList}}" wx:key="nav_list">
+      <view class="tabbar_li tabNav {{type==index?'on':''}}" catchtap="tabNav" data-index="{{index}}" style="color:{{choseColor}}" >{{item}}</view>
+    </block>
+  </scroll-view>
+</view>
+<!-- 占位 -->
+<view class="up_kong"></view>

@@ -1,0 +1,3 @@
+<!--pages/my/index.wxml-->
+<view class="list">2022-05-05 今天准备出去逛街</view>
+<tabBar idx="2" bind:look="show"></tabBar>

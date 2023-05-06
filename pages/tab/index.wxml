@@ -1,0 +1,2 @@
+<!--pages/tab/index.wxml-->
+<tab navList="{{navList}}" bind:change="tabNav"></tab>

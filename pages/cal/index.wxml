@@ -1,0 +1,3 @@
+<!--pages/cal/index.wxml-->
+<calendar bind:change="dateChange" defaultTime="" spot="{{spot}}" cal_title="日历" theme_color="#e07d50"></calendar>
+<tabBar idx="1" bind:look="show"></tabBar>

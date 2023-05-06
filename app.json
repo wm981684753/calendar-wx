@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/cal/index",
+    "pages/index/index",
+    "pages/canvas2d/index",
+    "pages/canvas2d/detail",
+    "pages/canvas2d/canvasGW",
+    "pages/toastModal/index",
+    "pages/toastModal/detail",
+    "pages/actionSheet/index",
+    "pages/actionSheet/detail",
+    "pages/rating/index",
+    "pages/rating/detail",
+    "pages/swiper/index",
+    "pages/swiper/detail",
+    "pages/canvas2d/index2",
+    "pages/customNav/index",
+    "pages/customNav/detail",
+    "components/loading/index",
+    "pages/loading/index",
+    "pages/loading/detail",
+    "pages/tab/index",
+    "pages/drawLiner/index",
+    "pages/drawLiner/detail",
+    "pages/tabBar/index",
+    "pages/my/index",
+    "pages/dateSel/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#333333",
+    "selectedColor": "#6B1F72",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/img/mld-s.png",
+        "selectedIconPath": "/img/mld.png",
+        "text": "添加"
+      },
+      {
+        "pagePath": "pages/cal/index",
+        "iconPath": "/img/mld-s.png",
+        "selectedIconPath": "/img/mld.png",
+        "text": "看看"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "/img/ygg-s.png",
+        "selectedIconPath": "/img/ygg.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tabBar":"/components/customTb"
+  },
+  "navigationBarTitleText": "我的安排"
+}

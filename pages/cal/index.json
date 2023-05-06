@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tabBar":"/components/customTb",
+    "calendar":"/components/calendar/calendar"
+  },
+  "navigationBarTitleText": "集美的日程"
+}

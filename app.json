@@ -25,7 +25,8 @@
     "pages/drawLiner/detail",
     "pages/tabBar/index",
     "pages/my/index",
-    "pages/dateSel/index"
+    "pages/dateSel/index",
+    "pages/login/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

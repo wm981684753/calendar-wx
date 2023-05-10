@@ -5,11 +5,31 @@ view{
 .list{
   border: 1px solid rgb(201, 233, 230);
   width: 90%;
-  height: 58rpx;
-  background-color: rgb(201, 233, 230);
-  margin: 0 auto;
+  height: 68rpx;
+  /* background-color: rgb(201, 233, 230); */
+  margin: 30rpx auto;
   border-radius: 10rpx;
-  line-height: 60rpx;
+  line-height: 70rpx;
   padding: 0 10rpx;
   box-shadow:0px 2px 4px 2px #DDDDDD;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+}
+
+.tolist{
+  border: 1px solid rgb(201, 233, 230);
+  width: 90%;
+  height: 68rpx;
+  background-color: rgb(229 234 234);
+  margin: 30rpx auto;
+  border-radius: 10rpx;
+  line-height: 70rpx;
+  padding: 0 10rpx;
+  box-shadow:0px 2px 4px 2px #DDDDDD;
+  color: #aaa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

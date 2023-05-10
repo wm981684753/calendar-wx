@@ -1,24 +1,44 @@
 // pages/my/index.js
+import { refreshToken } from '../../public/public.js';
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    calendarList:{}
   },
   show(){
-    wx.showToast({
-      title: '创作不易，star+关注一下',
-      icon:'none'
-    })
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+      var that = this
+      //接口获取我的日程列表
+      wx.request({
+        url: getApp().globalData.host+"/myCalendar",
+        method:"get",
+        header:{
+          "Content-Type": "application/x-www-form-urlencoded",
+          "token": wx.getStorageSync('token')
+        },
+        success(response){
+            var response = response.data
+            console.log(response)
+            if(response.code==200){
+                //页面渲染
+                that.setData({
+                  calendarList:response.data
+                })
+            }
+            if(response.code==401){
+              refreshToken("/pages/my/index")
+            }
+        }
+      })
   },
 
   /**
@@ -32,7 +52,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    const pages = getCurrentPages()
+    const perpage = pages[pages.length - 1]
+    perpage.onLoad()
   },
 
   /**

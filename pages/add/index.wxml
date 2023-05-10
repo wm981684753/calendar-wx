@@ -20,7 +20,7 @@
 <view class="title-tip">日程备注</view>
 <view class="text text-text">
   <textarea type="text" required="required"  focus="true"
-  placeholder-style="color:rgb(170,170,170);" value="" 
+  placeholder-style="color:rgb(170,170,170);" value="{{comment}}" 
   name="comment" style="height: 200rpx;">
   </textarea>
 </view>

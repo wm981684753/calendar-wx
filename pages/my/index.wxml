@@ -1,3 +1,8 @@
 <!--pages/my/index.wxml-->
-<view class="list">2022-05-05 今天准备出去逛街</view>
+<view wx:for="{{calendarList}}" wx:key="calendarList">
+  <view class="{{item.status==1?'list':'tolist'}}">
+    <text>{{item.startTime}} - {{item.end_time}}</text>
+    <text>      {{item.comments}}</text>
+  </view>
+</view>
 <tabBar idx="2" bind:look="show"></tabBar>

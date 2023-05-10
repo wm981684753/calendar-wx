@@ -10,8 +10,16 @@ Page({
   },
 
   onLoad: function () {
-    //获取用户信息
-    //发起微信登录
+    var that=this
+    // wx.request({
+    //   url: getApp()..globalData.host+"/",
+    // })
+  },
+
+  onShow: function () {
+    const pages = getCurrentPages()
+    const perpage = pages[pages.length - 1]
+    perpage.onLoad()
   },
 
 })

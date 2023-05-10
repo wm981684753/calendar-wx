@@ -1,5 +1,5 @@
 <!--pages/login/index.wxml-->
-<view wx:if="{{isHide}}">
+<view wx:if="{{!isHide}}">
  <view wx:if="{{canIUse}}" >
   <view class='header'>
    <image src='../../img/klmkk.jpeg'></image>

@@ -1,0 +1,31 @@
+<!--pages/dateSel/index.wxml-->
+<!--minDate最小时间 默认为2018/1/1,日期格式为yyyy/mm/dd ,最小时间和当前日期尽量不要相差太大,无最大日期,在触底时每次加载6个月 theme_color,主题色，仅支持16进制-->
+<date isShow="{{isShow}}" timeStart="{{sel_list.start_time}}" minDate="2019/1/1" timeEnd="{{sel_list.end_time}}" theme_color="#2493F8"
+  bind:tapYes="dateSubmit" id="date" />
+<view class="global">
+<view class="title">编辑日程</view>
+<form bindsubmit="formSubmit">
+<view class="title-tip">选择时间</view>
+<view class="text input-time">
+  <input type="text" required="required" placeholder="开始时间" 
+  placeholder-style="color:rgb(170,170,170);" value="{{start_time}}" 
+  bindtap="selectTime" name="start_time">
+  </input>
+  <view style="height: 40px; line-height: 40px;margin: 0 2%;">-</view>
+  <input type="text input-time" required="required" placeholder="结束时间" 
+  placeholder-style="color:rgb(170,170,170);" value="{{end_time}}" 
+  bindtap="selectTime" name="end_time">
+  </input>
+</view>
+<view class="title-tip">日程备注</view>
+<view class="text text-text">
+  <textarea type="text" required="required"  focus="true"
+  placeholder-style="color:rgb(170,170,170);" value="{{comment}}" 
+  name="comment" style="height: 200rpx;">
+  </textarea>
+</view>
+<button class="btn btn-l" formType="submit" bindtap="onDelete">移 除</button>
+<button class="btn btn-r" formType="submit">更 新</button>
+</form>
+</view>
+<tabBar idx="0" bind:look="show"></tabBar>

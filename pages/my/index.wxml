@@ -1,6 +1,6 @@
 <!--pages/my/index.wxml-->
 <view wx:for="{{calendarList}}" wx:key="calendarList">
-  <view class="{{item.status==1?'list':'tolist'}}">
+  <view class="{{item.status==1?'list':'tolist'}}" bindtap="toDetail" data-item="{{item}}">
     <text>{{item.startTime}} - {{item.end_time}}</text>
     <text>      {{item.comments}}</text>
   </view>

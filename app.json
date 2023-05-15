@@ -2,6 +2,7 @@
   "pages": [
     "pages/cal/index",
     "pages/add/index",
+    "pages/update/index",
     "pages/index/index",
     "pages/canvas2d/index",
     "pages/canvas2d/detail",

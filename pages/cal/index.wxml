@@ -1,3 +1,9 @@
 <!--pages/cal/index.wxml-->
 <calendar bind:change="dateChange" defaultTime="" spot="{{spot}}" cal_title="日历" theme_color="#e07d50"></calendar>
+<view wx:for="{{calendarList}}" wx:key="calendarList">
+  <view class="{{item.status==1?'list':'tolist'}}">
+    <image src="{{item.photo}}" alt=""/><text>{{item.startTime}} - {{item.endTime}}</text>
+    <text>\n{{item.comments}}</text>
+  </view>
+</view>
 <tabBar idx="1" bind:look="show"></tabBar>

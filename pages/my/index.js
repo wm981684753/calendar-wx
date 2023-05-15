@@ -41,6 +41,15 @@ Page({
       })
   },
 
+  toDetail:function (e) {
+      console.log(e)
+      let item = e.currentTarget.dataset['item'];
+      wx.setStorageSync('updateItem', item)
+      wx.redirectTo({
+        url: '/pages/update/index',
+      })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

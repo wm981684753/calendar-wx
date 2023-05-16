@@ -129,8 +129,14 @@ Page({
                 wx.setStorageSync('updateItem', null)
                 //跳转回去
                 setTimeout(function () { 
-                  wx.redirectTo({
+                  wx.switchTab({
                     url: '/pages/my/index',
+                    success:function (params) {
+                      var page = getCurrentPages().pop();
+                      if (page == undefined || page == null) return
+                      console.log(page)
+                      page.onLoad();
+                    }
                   })
                }, 1200)
               },//接口调用成功

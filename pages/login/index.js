@@ -67,8 +67,14 @@ Page({
            wx.setStorage({ key:"openid",data:res.data.openid})
            wx.setStorage({ key:"token",data:response.data.data.token})
            wx.setStorage({ key:"refreshToken",data:response.data.data.refreshToken})
-           wx.redirectTo({
+
+          wx.switchTab({
             url: '/pages/cal/index',
+            success:function (params) {
+              var page = getCurrentPages().pop();
+              if (page == undefined || page == null) return
+              page.onLoad();
+            }
           })
            }})
           }

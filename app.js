@@ -4,7 +4,8 @@ App({
     userInfo: null,
     appName:"盼兮在兮",
     isHide:false,
-    host:"http://localhost"
+    // host:"http://localhost"
+    host:"http://1.117.108.243"
   },
   
   onLaunch() {

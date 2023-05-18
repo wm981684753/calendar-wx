@@ -5,7 +5,8 @@ App({
     appName:"盼兮在兮",
     isHide:false,
     // host:"http://localhost"
-    host:"http://1.117.108.243"
+    // host:"http://1.117.108.243"
+    host:"https://www.micico.cn"
   },
   
   onLaunch() {
